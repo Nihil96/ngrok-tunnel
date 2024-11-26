@@ -11,6 +11,7 @@ Before using this project, you need to:
    - Log in to your ngrok account
    - Go to "Your Authtoken" section in the dashboard
    - Copy your authtoken (it looks like: `2oYwCZSnJolh4qOL5XoWbzLjjRr_...`)
+3. Ensure that you have Node.js installed on your machine.
 
 ## Installation
 
