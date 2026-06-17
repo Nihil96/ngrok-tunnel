@@ -15,6 +15,9 @@ function getNgrokOptions() {
     addr: process.env.NGROK_PORT,
     authtoken: process.env.NGROK_TOKEN,
     domain: process.env.NGROK_DOMAIN,
+    request_header_add: process.env.NGROK_HOST_HEADER
+      ? [`Host:${process.env.NGROK_HOST_HEADER}`]
+      : undefined,
     basic_auth: process.env.NGROK_BASIC_AUTH,
     oauth_provider: process.env.NGROK_OAUTH_PROVIDER,
     oauth_allow_emails: process.env.NGROK_OAUTH_EMAILS?.split(","),
