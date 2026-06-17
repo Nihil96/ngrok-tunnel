@@ -37,6 +37,7 @@ Configure your tunnel by editing the `.env` file:
 # Required Configuration
 NGROK_PORT=9000                    # Your local port to expose
 NGROK_TOKEN=your_ngrok_token       # Your ngrok authtoken
+NGROK_HOST_HEADER=localhost:9000   # Rewrite the Host header sent to your local app (fixes "Invalid Host header")
 
 # Optional Configuration
 NGROK_DOMAIN=subdomain.ngrok-free.app    # Custom domain - you can have one free static domain per user or upgrade to paid to use a domain of your choice https://dashboard.ngrok.com/domains
